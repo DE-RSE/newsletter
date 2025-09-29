@@ -21,7 +21,7 @@ body:
   - type: textarea
     id: body
     attributes:
-      label: More information or text
+      label: "More information or text"
       description: You can (but do not have to) input more text here. This can either be an explenation of why this idea is interesting for the newsletter or even a proposed text, maybe even including links to images.
       placeholder:
       value: 
@@ -30,7 +30,7 @@ body:
   - type: checkboxes
     id: version
     attributes:
-      label: Confirmation of usage rights / license
+      label: "Confirmation of usage rights / license"
       description: Please confirm that any submitted text is your own and that you agree to license is using the CC0 license.
       options:
         - label: Yes
