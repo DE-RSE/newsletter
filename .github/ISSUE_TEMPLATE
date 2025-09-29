@@ -1,0 +1,40 @@
+name: Article Idea
+description: You can use this to either let us know of an idea you think would make a great article in our newsletter, or even to propose some text already.
+title: "[Article]: "
+labels: ["idea"]
+projects: ["newsletter/1"]
+assignees:
+  -  ClaireWyatt
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to let us know of your idea!
+  - type: input
+    id: title
+    attributes:
+      label: A short title desribing the idea
+      description: This is not necessary the title of the article, but could be
+      placeholder: report on last conference on sliced bread
+    validations:
+      required: true
+  - type: textarea
+    id: body
+    attributes:
+      label: More information or text
+      description: You can (but do not have to) input more text here. This can either be an explenation of why this idea is interesting for the newsletter or even a proposed text, maybe even including links to images.
+      placeholder:
+      value: 
+    validations:
+      required: false
+  - type: checkboxes
+    id: version
+    attributes:
+      label: Confirmation of usage rights / license
+      description: Please confirm that any submitted text is your own and that you agree to license is using the CC0 license.
+      options:
+        - label: Yes
+          required: true
+    validations:
+      required: true
+
