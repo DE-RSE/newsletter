@@ -14,7 +14,7 @@ body:
     id: title
     attributes:
       label: A short title desribing the idea
-      description: This is not necessary the title of the article, but could be
+      description: This is not necessary the title of the article, but could be.
       placeholder: report on last conference on sliced bread
     validations:
       required: true
@@ -22,7 +22,7 @@ body:
     id: body
     attributes:
       label: "More information or text"
-      description: You can (but do not have to) input more text here. This can either be an explenation of why this idea is interesting for the newsletter or even a proposed text, maybe even including links to images.
+      description: You can (but do not have to) input more text here. This can be, e.g., an explanation of why this idea is interesting for the newsletter, or even a proposed text, maybe even including links to images: anything you like us to know beyond the title.
       placeholder:
       value: 
     validations:
@@ -31,7 +31,7 @@ body:
     id: version
     attributes:
       label: "Confirmation of usage rights / license"
-      description: Please confirm that any submitted text is your own and that you agree to license is using the CC0 license.
+      description: Please confirm that any submitted and proposed material is your own and that you agree to license is using the CC0 license.
       options:
         - label: "Yes, I confirm"
           required: true
