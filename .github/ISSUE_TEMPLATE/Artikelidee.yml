@@ -1,0 +1,40 @@
+name: Artikelidee
+description: Du kannst diese Vorlage benutzen, wenn Du uns eine Idee für einen Artikel mitteilen möchtest, aber auch, um schon einen kompletten Textvorschlag zu machen.
+title: "[Artikel]: "
+labels: ["idee"]
+projects: ["newsletter/1"]
+assignees:
+  -  ClaireWyatt
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass Du Dir die Zeit nimmst, uns von Deiner Idee zu erzählen!
+  - type: input
+    id: title
+    attributes:
+      label: Ein kurzer Titel, der die Idee beschreibt
+      description: Das kann, muss aber nicht der Titel des möglichen Artikels sein.
+      placeholder: Bericht über die letzte Konferenz über geschnittenes Brot
+    validations:
+      required: true
+  - type: textarea
+    id: body
+    attributes:
+      label: "Mehr Information oder Text"
+      description: Du kannst (musst aber nicht) dieses Feld für mehr Text nutzen, um uns zum Beispiel die Idee näher zu erläutern oder aber sogar schon einen Textvorschlag mit Bildern zu machen.
+      placeholder: Das Konferenzdinner war etwas trocken. Es gab Zwieback.
+      value: 
+    validations:
+      required: false
+  - type: checkboxes
+    id: version
+    attributes:
+      label: "Bestätigung über die Rechtefreigabe / Lizenz"
+      description: Bitte bestätige hier, dass alles vorgeschlagene Material Dein eigenes Werk sind und dass Du der Veröffentlichung unter der CC0-Lizenz zustimmst.
+      options:
+        - label: "Ja, ich bestätige"
+          required: true
+    validations:
+      required: true
+
