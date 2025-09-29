@@ -1,7 +1,7 @@
 name: article-idea
 description: You can use this to either let us know of an idea you think would make a great article in our newsletter, or even to propose some text already.
-title: "[Article]: "
-labels: ["idea"]
+title: "[Artikel]: "
+labels: ["idee"]
 projects: ["newsletter/1"]
 assignees:
   -  ClaireWyatt
@@ -22,7 +22,7 @@ body:
     id: body
     attributes:
       label: "More information or text"
-      description: You can (but do not have to) input more text here. This can be, e.g., an explanation of why this idea is interesting for the newsletter, or even a proposed text, maybe even including links to images: anything you like us to know beyond the title.
+      description: "You can (but do not have to) input more text here. This can be, e.g., an explanation of why this idea is interesting for the newsletter, or even a proposed text, maybe even including links to images: anything you like us to know beyond the title."
       placeholder:
       value: 
     validations:
