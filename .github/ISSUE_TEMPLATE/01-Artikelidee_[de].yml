@@ -1,7 +1,6 @@
-name: "Artikelidee [de]"
-description: Du kannst diese Vorlage benutzen, wenn Du uns eine Idee für einen Artikel mitteilen möchtest, aber auch, um schon einen kompletten Textvorschlag zu machen.
+name: "Einreichung Newsletter [de]"
+description: "Du kannst diese Vorlage benutzen, um uns eine Einreichung für den Newsletter zukommen zu lassen."
 title: "[Artikel]: "
-labels: ["idee"]
 projects: ["newsletter/1"]
 assignees:
   -  ClaireWyatt
@@ -9,22 +8,21 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: |
-        Danke, dass Du Dir die Zeit nimmst, uns von Deiner Idee zu erzählen!
+      value: "Danke, dass Du Dir die Zeit nimmst, etwas für unseren Newsletter zu schreiben!"
   - type: input
     id: title
     attributes:
-      label: Ein kurzer Titel, der die Idee beschreibt
-      description: Das kann, muss aber nicht der Titel des möglichen Artikels sein.
-      placeholder: Bericht über die letzte Konferenz über geschnittenes Brot
+      label: Titel
+      description: "Ein Titel, der den Artikel möglichst kurz beschreibt"
+      placeholder: "Bericht über die diesjährige Konferenz „Geschnittenes Brot“"
     validations:
       required: true
   - type: textarea
     id: body
     attributes:
-      label: "Mehr Information oder Text"
-      description: Du kannst (musst aber nicht) dieses Feld für mehr Text nutzen, um uns zum Beispiel die Idee näher zu erläutern oder aber sogar schon einen Textvorschlag mit Bildern zu machen.
-      placeholder: Das Konferenzdinner war etwas trocken. Es gab Zwieback.
+      label: "Artikeltext"
+      description: "Bitte benutze dieses Textfeld für den Haupttext des Artikels. Füge Bilder entweder als Anhang oder Link ein."
+      placeholder: "Das Konferenzdinner war etwas trocken: es gab Zwieback."
       value: 
     validations:
       required: false
@@ -32,7 +30,7 @@ body:
     id: version
     attributes:
       label: "Bestätigung über die Rechtefreigabe / Lizenz"
-      description: Bitte bestätige hier, dass alles vorgeschlagene Material Dein eigenes Werk sind und dass Du der Veröffentlichung unter der CC0-Lizenz zustimmst.
+      description: "Bitte bestätige hier, dass alles vorgeschlagene Material Dein eigenes Werk sind und dass Du der Veröffentlichung unter der CC0-Lizenz zustimmst."
       options:
         - label: "Ja, ich bestätige"
           required: true
