@@ -5,6 +5,7 @@ labels: ["idee"]
 projects: ["newsletter/1"]
 assignees:
   -  ClaireWyatt
+  -  dstaengle-fzj
 body:
   - type: markdown
     attributes:
