@@ -26,7 +26,7 @@ body:
       value: 
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: link
     attributes:
       label: "Further link"
