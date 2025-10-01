@@ -48,7 +48,7 @@ body:
     id: version
     attributes:
       label: "Confirmation of usage rights / licence"
-      description: "Please confirm that any submitted and proposed material is your own and that you agree to licence is using the CC0 licence."
+      description: "Please confirm that any submitted and proposed material is your own and that you agree to licence it using the CC0 licence."
       options:
         - label: "Yes, I confirm"
           required: true
