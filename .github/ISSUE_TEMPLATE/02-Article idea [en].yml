@@ -28,8 +28,8 @@ body:
       required: false
   - type: dropdown
   attributes:
-    label: Version
-    description: Category
+    label: Category
+    description: "Please provide a category of your submission"
     multiple: false
     options:
       - Conferences & Meetups
