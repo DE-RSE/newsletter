@@ -1,6 +1,6 @@
-name: "Einreichung Newsletter [de]"
-description: "Du kannst diese Vorlage benutzen, um uns eine Einreichung für den Newsletter zukommen zu lassen."
-title: "[Artikel]: "
+name: "Artikel-Einreichung [de]"
+description: "Mit dieser Vorlage kannst du einen Artikel für unseren Newsletter vorschlagen."
+title: "Schreib hier einen kurzen, knackigen Titel für deinen Artikel"
 projects: ["newsletter/1"]
 assignees:
   -  ClaireWyatt
@@ -8,32 +8,49 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "Danke, dass Du Dir die Zeit nimmst, etwas für unseren Newsletter zu schreiben!"
-  - type: input
-    id: title
-    attributes:
-      label: Titel
-      description: "Ein Titel, der den Artikel möglichst kurz beschreibt"
-      placeholder: "Bericht über die diesjährige Konferenz „Geschnittenes Brot“"
-    validations:
-      required: true
+      value: "Danke für deinen Beitrag zum de-RSE-Newsletter! Damit wir deine Neuigkeiten mit der Community teilen können, füge bitte alle wichtigen Infos hinzu (z. B. Titel, Artikeltext, Termine, Links und Kontaktangaben). Wir freuen uns darauf, deinen Beitrag zu veröffentlichen."
   - type: textarea
     id: body
     attributes:
       label: "Artikeltext"
-      description: "Bitte benutze dieses Textfeld für den Haupttext des Artikels. Füge Bilder entweder als Anhang oder Link ein."
-      placeholder: "Das Konferenzdinner war etwas trocken: es gab Zwieback."
+      description: "Hier kannst du den Haupttext deines Artikels eintragen"
+      placeholder: 
+      value: 
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: "Zusätzlicher Link"
+      description: "Falls vorhanden, gib hier bitte einen Link für weitere Infos an"
+      placeholder: 
       value: 
     validations:
       required: false
+  - type: dropdown
+    id: category
+    attributes:
+      label: Kategorie
+      description: "Wähle bitte eine passende Kategorie für deinen Beitrag"
+      multiple: false
+      options:
+        - Konferenzen & Treffen
+        - Trainings & Workshops
+        - Jobs & Chancen
+        - Förderungen & Stipendien/Preise
+        - Tools & Tipps
+        - Community-News (de-RSE oder anderswo in Deutschland)
+        - Empfehlungen zum Lesen, Hören oder Anschauen
+      default: 0
+    validations:
+      required: true
   - type: checkboxes
     id: version
     attributes:
-      label: "Bestätigung über die Rechtefreigabe / Lizenz"
-      description: "Bitte bestätige hier, dass alles vorgeschlagene Material Dein eigenes Werk sind und dass Du der Veröffentlichung unter der CC0-Lizenz zustimmst."
+      label: "Bestätigung der Rechte / Lizenz"
+      description: "Bitte bestätige, dass dein eingereichtes Material von dir stammt und dass du einverstanden bist, es unter der CC0-Lizenz zu veröffentlichen."
       options:
-        - label: "Ja, ich bestätige"
+        - label: "Ja, bestätige ich"
           required: true
     validations:
       required: true
-
