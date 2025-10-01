@@ -1,6 +1,6 @@
 name: "Article submission [en]"
 description: "You can use this template to propose an article for our newsletter."
-title: "[Artikel]: "
+title: "Use a great, short title for your article here"
 projects: ["newsletter/1"]
 assignees:
   -  ClaireWyatt
