@@ -9,14 +9,6 @@ body:
   - type: markdown
     attributes:
       value: "Thank you for your contribution to the de-RSE newsletter! To help us share your news with the community, include all relevant details (such as title, article text, dates, links, and contact information, etc.). We look forward to featuring your submission."
-  # - type: input
-  #   id: title
-  #   attributes:
-  #     label: Title
-  #     description: "A title describing the article as briefly as possible"
-  #     placeholder: "report on this year‘s conference “Sliced Bread”"
-  #   validations:
-  #     required: true
   - type: textarea
     id: body
     attributes:
