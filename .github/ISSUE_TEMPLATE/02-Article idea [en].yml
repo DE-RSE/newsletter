@@ -13,7 +13,7 @@ body:
     id: title
     attributes:
       label: Title
-      description: "A title desribing the article as briefly as possible"
+      description: "A title describing the article as briefly as possible"
       placeholder: "report on this year‘s conference “Sliced Bread”"
     validations:
       required: true
