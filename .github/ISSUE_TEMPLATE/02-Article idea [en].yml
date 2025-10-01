@@ -26,10 +26,26 @@ body:
       value: 
     validations:
       required: false
+  - type: dropdown
+  attributes:
+    label: Version
+    description: Category
+    multiple: false
+    options:
+      - Conferences & Meetups
+      - Trainings and Workshops
+      - Jobs & Opportunities
+      - Funding & Grants
+      - Tools and Tips
+      - Community News (de-RSE or elsewhere in Germany)
+      - Recommended Reading, Listening or Viewing
+    default: 0
+  validations:
+    required: true
   - type: checkboxes
     id: version
     attributes:
-      label: "Confirmation of usage rights / license"
+      label: "Confirmation of usage rights / licence"
       description: "Please confirm that any submitted and proposed material is your own and that you agree to license is using the CC0 license."
       options:
         - label: "Yes, I confirm"
