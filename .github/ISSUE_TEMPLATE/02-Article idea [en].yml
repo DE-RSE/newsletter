@@ -27,21 +27,21 @@ body:
     validations:
       required: false
   - type: dropdown
-  attributes:
-    label: Category
-    description: "Please provide a category of your submission"
-    multiple: false
-    options:
-      - Conferences & Meetups
-      - Trainings and Workshops
-      - Jobs & Opportunities
-      - Funding & Grants
-      - Tools and Tips
-      - Community News (de-RSE or elsewhere in Germany)
-      - Recommended Reading, Listening or Viewing
-    default: 0
-  validations:
-    required: true
+    attributes:
+      label: Category
+      description: "Please provide a category of your submission"
+      multiple: false
+      options:
+        - Conferences & Meetups
+        - Trainings and Workshops
+        - Jobs & Opportunities
+        - Funding & Grants
+        - Tools and Tips
+        - Community News (de-RSE or elsewhere in Germany)
+        - Recommended Reading, Listening or Viewing
+      default: 0
+    validations:
+      required: true
   - type: checkboxes
     id: version
     attributes:
