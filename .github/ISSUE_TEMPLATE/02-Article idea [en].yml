@@ -8,7 +8,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "Thanks for taking the time to contribute to our newsletter!"
+      value: "Thank you for your contribution to the de-RSE newsletter! To help us share your news with the community, include all relevant details (such as title, article text, dates, links, and contact information, etc.). We look forward to featuring your submission."
   # - type: input
   #   id: title
   #   attributes:
