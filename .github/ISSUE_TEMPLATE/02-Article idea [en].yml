@@ -9,14 +9,14 @@ body:
   - type: markdown
     attributes:
       value: "Thanks for taking the time to contribute to our newsletter!"
-  - type: input
-    id: title
-    attributes:
-      label: Title
-      description: "A title describing the article as briefly as possible"
-      placeholder: "report on this year‘s conference “Sliced Bread”"
-    validations:
-      required: true
+  # - type: input
+  #   id: title
+  #   attributes:
+  #     label: Title
+  #     description: "A title describing the article as briefly as possible"
+  #     placeholder: "report on this year‘s conference “Sliced Bread”"
+  #   validations:
+  #     required: true
   - type: textarea
     id: body
     attributes:
@@ -25,8 +25,18 @@ body:
       placeholder: 
       value: 
     validations:
+      required: true
+  - type: textarea
+    id: link
+    attributes:
+      label: "Further link"
+      description: "Please provide a link for further reading, if any"
+      placeholder: 
+      value: 
+    validations:
       required: false
   - type: dropdown
+    id: category
     attributes:
       label: Category
       description: "Please provide a category of your submission"
